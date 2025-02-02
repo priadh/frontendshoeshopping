@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+.body {
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navi {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    z-index: 1; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 2px -2px rgb(184, 176, 176);
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #e72e9d, #512ad1); /* Pink to purple gradient */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+    margin-right: 20px; /* Space between title and links */
+}
+
+.navL a {
+    color: black; /* Black text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for the links */
+    font-size: 16px; /* Font size for better readability */
+}
+
+/* Hover effect for navigation links */
+
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.nav-icons svg {
+    width: 18px; /* Adjust size as needed */
+    height: 18px; /* Adjust size as needed */
+    fill: currentColor; /* Use current text color */
+}
+
+.nav-image {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    border-radius: 50%; /* Optional: make the image circular */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .navi {
+        flex-direction: column;
+    }
+    
+    .nav-title {
+        margin-right: 0; /* Reset margin for smaller screens */
+        margin-bottom: 20px; /* Add margin bottom for smaller screens */
+    }
+}
+
+
+/* Background image styling */
+.background-section {
+    position: relative;
+   
+}
+
+/* Custom image styling */
+.background-section img {
+    position: absolute;
+    top: 2px; /* Adjust top position based on navbar height */
+    right: 20px; /* Adjust right position as needed */
+    width: 1015px; /* Set custom width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/* Top image styling */
+.top-image {
+    position: absolute;
+    /* left: 950px; */
+    top: 59px !important; /* Adjust top position based on navbar height */
+    right: 80px; /* Adjust right position as needed */
+    width: 450px !important;   /* Set custom width */
+    height:auto; /* Maintain aspect ratio */
+    z-index: 1;
+}
+
+.description-text {
+    position: relative;
+    font-size: 16px; /* Adjust font size as needed */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(0, 0, 0) !important; /* Text color */
+    margin-top: 230px; /* Space above the description text */
+    max-width: 590px;
+    z-index: 1;
+    margin-left: 89px;
+     /* Set a max-width for better readability */
+}
+
+
+.gradient-text {
+    position: absolute;
+    top: 120px; /* Adjust top position as needed */
+    left: 89px; /* Adjust left position as needed */
+    font-size: 60px; /* Adjust font size as needed */
+    font-weight: bold;
+  
+    background: linear-gradient(135deg, #e72e9d, #512ad1); /* Pink to purple gradient */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    -webkit-text-fill-color: transparent; 
+    /* Make the text transparent */
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.gradient-text2 {
+    position: absolute;
+    top: 180px; /* Adjust top position as needed */
+    left: 89px; /* Adjust left position as needed */
+    font-size: 60px; /* Adjust font size as needed */
+    font-weight: bold;
+  
+    background: linear-gradient(135deg, #e72e9d, #512ad1); /* Pink to purple gradient */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    -webkit-text-fill-color: transparent; 
+    /* Make the text transparent */
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.shop-now-btn {
+    margin-top: 100px; /* Space above the button */
+    padding: 5px 8px;
+    margin-left: 89px; /* Padding inside the button */
+    font-size: 15px; /* Font size for the button */
+    font-weight:lighter;
+    color: white; /* Text color */
+    background: linear-gradient(135deg, #e72e9d, #512ad1); /* Gradient background */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.shop-now-btn:hover {
+    background: linear-gradient(135deg, #512ad1, #e72e9d); /* Invert gradient on hover */
+}
+
+.social-icons {
+    position: absolute;
+    top: 73%;
+    right: 15px;
+    transform: translateY(-50%);
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.social-icons a{
+    color: black;
+}
+.social-icons li {
+    margin-bottom: 10px;
+}
+
+.social-icons li:last-child {
+    margin-bottom: 0;
+}
+
+/* .social-icons img {
+    width: 40px;
+    height: auto;
+    transform: translateY(-50%);
+
+} */
+
+
+
+.social-icons svg {
+    width: 20px;
+    height: auto;
+    fill: black; /* Initial fill */
+    transition: fill 0.3s ease; /* Smooth transition */
+}
+
+.social-icons svg:hover{
+    fill:#c72092;
+}
+
+
+
+.products-section {
+    text-align: center;
+    margin-top: 200px; /* Adjust margin as needed */
+}
+
+.products-section2 {
+    text-align: center;
+    margin-top:30px; /* Adjust margin as needed */
+}
+
+
+
+.products-heading {
+    font-size: 28px; /* Adjust font size as needed */
+    font-size: 60px; /* Adjust font size as needed */
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #e72e9d, #512ad1); /* Pink to purple gradient */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    -webkit-text-fill-color: transparent; 
+    /* Make the text transparent */
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.product-cards {
+    display: flex;
+   
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.card {
+    flex: 1;
+    background-color: #f3f1f5; /* Example background color */
+    padding: 7px;
+    
+    margin-right: 25px; 
+    /* Adjust spacing between cards */
+    margin-left: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(181, 39, 216, 0.966); /* Example shadow */
+}
+
+.card img {
+    margin-top: 15px;
+    width: 40%; /* Ensure image fills the card */
+    border-radius: 8px; /* Same as card radius */
+}
+
+
+.card-text {
+    background: linear-gradient(135deg, #000000, #000000); /* Pink to purple gradient */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+     font: bolder;
+     font-size: large;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+    .card-description {
+        font-size: 14px;
+        color: rgb(204, 193, 193); /* Set description text color to grey */
+    }
+
+
+    .card-price {
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 1px;
+        color: #333;
+    }
+    
+    .card-rating {
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+    }
+    
+    .star {
+        font-size: 20px;
+        color: #ffbf00; /* Gold color for stars */
+    }
+    
+    .add-to-cart-btn{
+    font-size: 14px; /* Font size for the button */
+    font-weight:lighter;
+    color: white; /* Text color */
+    background: linear-gradient(135deg, #e72e9d, #512ad1); /* Gradient background */
+    border: none; /* Remove border */
+    border-radius: 0px; /* Rounded corners */
+    cursor: pointer;
+    padding: 8px 20px; /* Increased padding */
+    margin-top: 5px;
+    transition: background 0.3s ease; 
+    margin-bottom: 30px;
+    }
+
+   
+/* .card-img {
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.card-img:hover {
+    transform: scale(1.3);
+} */
+
+
+.card:hover .card-img {
+    transform: scale(1.3);
+}
+
+.card-img {
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    transition: left 0.2s ease;
+}
+
+.image-container {
+    position: relative;
+}
+
+
+
+
+.heart-icon {
+    position: absolute;
+    border: 1px solid rgb(230, 220, 220);
+    box-shadow: 0 4px 2px -2px rgb(202, 193, 193);
+
+    border-radius: 3px;
+    padding:5px 5px 1px 5px;
+    top: 20%;
+    left: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: left 0.2s ease, opacity 0.2s ease;
+}
+
+.card:hover .heart-icon {
+    left: 10px; /* Adjust as needed for proper positioning */
+    opacity: 1;
+}
+
+.heart-icon svg {
+    fill: currentColor;
+}
+
+
+
+.about-heading {
+    font-size: 28px; /* Adjust font size as needed */
+    font-size: 60px; /* Adjust font size as needed */
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #e72e9d, #512ad1); /* Pink to purple gradient */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    -webkit-text-fill-color: transparent; 
+    /* Make the text transparent */
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.about-section {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 90px;
+     /* Adjust margin as needed */
+}
+
+
+
+
+/* Gallery section styles */
+.wrapper {
+    display: flex;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.6);
+    border: 5px solid #9c4acc;
+    border-radius:30px;
+    margin-left: 20px;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 40px;
+    /* background-image: linear-gradient(135deg, #e72e9d, #512ad1); */
+    
+}
+
+.gallery__thumb {
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-image: linear-gradient(135deg, #e72e9d, #512ad1);
+    border-radius: 7px;
+}
+
+.gallery__thumb img {
+    display: block;
+    width: 100px;
+    height: auto;
+    
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.gallery__thumb img:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.gallery__item {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 85%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery__selector {
+    display: none;
+}
+
+.gallery__selector:checked + .gallery__item {
+    opacity: 1;
+}
+
+.btn {
+    float: left;
+    margin: 6px;
+    width: 120px;
+    height: 63px;
+    text-align: center;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    transition: 0.1s ease-in;
+}
+
+.btn a img {
+    display: block; 
+    text-decoration: none;
+    height: 63px;
+    width: 120px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.btn:hover {
+    transition: 0.1s ease-in;
+    transform: scale(1.2);
+    background: #00aff9;
+}
+
+@keyframes slide {
+    0% { font-size: 0px; opacity: 1;}   
+    100% { font-size: 75px; opacity: 1;}  
+}
+
+
+.lorem-box {
+    margin-left: 90px;
+    padding: 10px;
+    border: 5px solid  #e24ba6;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.6);
+
+    border-radius:30px;    background-color: #f9f9f9;
+    max-width: 500px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-container > div {
+    flex: 1;
+    margin: 10px;
+}
+
+.product1, .product2, .product3, .product4, .product5, .product6 {
+    flex-basis: calc(33.33% - 20px); /* Adjust this to control the width of each product box */
+}
+
+/* CSS for the Shop Now button in the lorem-box */
+.shop-now-lorem-btn {
+    display: inline-block;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.6);
+    margin-top: 20px; /* Adjust as needed for spacing */
+    padding: 10px 18px; /* Adjust padding for button size */
+    font-size: 16px;
+    margin-left: 650px;
+    font-weight: bold; /* Make the text bold */
+    color: #020202; /* Button text color */
+    background-color: #ffffff; /* Button background color */
+    border: 2px solid #e24ba6; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline from text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.shop-now-lorem-btn:hover {
+    background-color:#e24ba6; /* Darker shade for hover effect */
+}
+
+.review-heading {
+    font-size: 28px; /* Adjust font size as needed */
+    font-size: 60px; /* Adjust font size as needed */
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #e72e9d, #512ad1); /* Pink to purple gradient */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    -webkit-text-fill-color: transparent; 
+    /* Make the text transparent */
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.review-section {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 90px;
+     /* Adjust margin as needed */
+}
+
+.review-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-size: 0.9em;
+    color: #555;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
